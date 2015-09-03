@@ -10,7 +10,6 @@ class CafeApiTest extends TestCase
     /** @test */
     public function it_shows_a_paginated_index_of_all_cafes()
     {
-        // new endpoint for backwards compatibility
         $this->get('/api/v2/cafes')
             ->seeStatusCode(200)
 
