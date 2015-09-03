@@ -7,7 +7,7 @@
 For a demo, check out this [presentation](https://prezi.com/-bceczai8pmn/lumen-fractal/)
     
     
-Harness the power of Laravel's Validator to write tests like this:
+### Harness the power of Laravel's Validator to write tests like this:
 
 ```php
 use DesiCochrane\ApiTesting\ValidatesApi;
