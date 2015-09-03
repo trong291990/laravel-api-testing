@@ -1,5 +1,9 @@
 ## Helpers for API testing in Laravel
 
+### Usage
+    composer require desicochrane/laravel-api-testing
+    
+    
 Harness the power of Laravel's Validator to write tests like this:
 
 ```php
