@@ -4,7 +4,7 @@
     composer require desicochrane/laravel-api-testing
     
 
-    For a demo, check out this [presentation](https://prezi.com/-bceczai8pmn/lumen-fractal/)
+For a demo, check out this [presentation](https://prezi.com/-bceczai8pmn/lumen-fractal/)
     
     
 Harness the power of Laravel's Validator to write tests like this:
