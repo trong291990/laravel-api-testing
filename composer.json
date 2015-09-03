@@ -1,0 +1,9 @@
+{
+  "name": "desicochrane/laravel-api-testing",
+  "licence": "MIT",
+  "autoload": {
+    "psr-4": {
+      "DesiCochrane\\ApiTesting\\": "src/"
+    }
+  }
+}
