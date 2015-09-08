@@ -29,6 +29,9 @@ trait ValidatesApi
         Validator::extend('strict_boolean', function ($attribute, $value, $parameters) {
             return is_bool($value);
         });
+        Validator::extend('strict_numeric', function ($attribute, $value, $parameters) {
+            return is_numeric($value) && ! is_string($value);
+        });
     }
 
     /**
