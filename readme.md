@@ -6,7 +6,7 @@
 
 For a demo, check out this [presentation](https://prezi.com/-bceczai8pmn/lumen-fractal/)
 
-For a walkthrough, checkout the [blog](http://valuehacking.io/2015/09/05/api-testing-in-laravel-5.html).
+For a walkthrough, checkout the [blog](http://desicochrane.github.io/laravel-api-testing).
     
     
 ### Harness the power of Laravel's Validator to write tests like this:
