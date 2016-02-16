@@ -4,7 +4,7 @@
     composer require desicochrane/laravel-api-testing
     
 
-For a demo, check out this [presentation](https://prezi.com/-bceczai8pmn/lumen-fractal/)
+For a demo, check out this [presentation](https://prezi.com/-bceczai8pmn/fractal/)
 
 For a walkthrough, checkout the [blog](http://desicochrane.github.io/laravel-api-testing).
     
