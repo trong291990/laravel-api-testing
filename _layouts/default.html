@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body id="app">
+
+<div class="site-viewport">
+    {% include header.html %}
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2" style="padding-top:20px">
+                {{ content }}
+            </div>
+        </div>
+    </div>
+
+    <div class="site-sticky-push"></div>
+</div>
+<!-- /.site-viewport -->
+
+{% include footer.html %}
+<script src="{{ '/dist/js/bundle.js' }}"></script>
+</body>
+
+</html>

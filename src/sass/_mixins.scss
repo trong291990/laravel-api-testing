@@ -1,0 +1,50 @@
+/**
+ * _sass/_mixins.scss
+ */
+$dcTextMarked_colorA--hot: #EF5734 !default;
+$dcTextMarked_colorB--hot: #f89406 !default;
+$dcTextMarked_colorC--hot: yellow !default;
+$dcTextMarked_width: 5px !default;
+
+@mixin textMarkedLeft($stripeWidth: $dcTextMarked_width) {
+  @include textMarked($stripeWidth, 'left')
+}
+
+@mixin textMarkedRight($stripeWidth) {
+  @include textMarked($stripeWidth, 'right')
+}
+
+@mixin textMarked($stripeWidth, $direction) {
+
+  @if $direction == 'left' {
+    $position: 'before';
+    $opposite: 'right';
+  }
+  @if $direction == 'right' {
+    $position: 'after';
+    $opposite: 'left';
+  }
+
+  position: relative;
+  display: inline-block;
+  margin-left: $stripeWidth * 6;
+  margin-right: $stripeWidth * 6;
+
+
+  &:#{$position} {
+
+    #{$direction}: $stripeWidth * -6;
+    top: 0;
+    position: absolute;
+    height: 100%;
+    width: $stripeWidth * 3;
+
+    border-top-#{$direction}-radius: $stripeWidth * 2;
+    border-bottom-#{$direction}-radius: $stripeWidth * 2;
+    content: '';
+
+    border-#{$direction}: $dcTextMarked_width solid $dcTextMarked_colorA--hot;
+    border-#{$opposite}: $dcTextMarked_width solid $dcTextMarked_colorC--hot;
+    background: $dcTextMarked_colorB--hot;
+  }
+}

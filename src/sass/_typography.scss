@@ -1,0 +1,43 @@
+// _sass/_typography.scss
+
+@import url(http://fonts.googleapis.com/css?family=Nunito:400,300,700&subset=latin,latin-ext);
+
+.dc-text--marked {
+  @include textMarkedLeft(5px);
+  @include textMarkedRight(5px);
+}
+
+.dc-text--marked-left {
+  @include textMarkedLeft(5px);
+}
+
+.dc-text--marked-right {
+  @include textMarkedRight(5px);
+}
+
+ ul {
+}
+.post-content p, .post-content li {
+  line-height: 200%;
+  font-size: 1.1em;
+}
+.post-content p {
+  margin-top: 35px;
+}
+
+h3 {
+  font-weight: 900;
+  margin-top: 80px;
+  margin-bottom: 25px;
+}
+
+.quote {
+//  font-family: Nunito;
+  font-size: 1.5em;
+  text-align: center;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  margin: 60px 30px;
+  padding: 40px;
+}
+

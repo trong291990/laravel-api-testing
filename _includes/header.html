@@ -1,0 +1,37 @@
+<header class='site-header container-fluid'>
+
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+
+      {% if page.url == '/index.html' %}
+
+      <h1 class="site-header_heading dc-heading dc-h1 dc-text--light">
+        <span class="dc-text--marked">
+          value<span style="font-weight: 300">hacking.io</span>
+        </span>
+      </h1>
+      <p class="site-header_sub-heading dc-text dc-text--light" style="margin-left: 30px">The personal blog of Desi Cochrane</p>
+
+      {% else %}
+
+      <h1 class="site-header_heading dc-heading dc-h1 dc-text--light">
+        <span class="dc-text--marked">{{ page.title }}</span>
+      </h1>
+
+      <div class="page-meta" style="margin-left: 30px">
+        <div class="dc-heading dc-h4 dc-text--light3">
+          {{ page.subtitle }}
+        </div>
+
+        <p class="dc-text dc-text--light">
+          {{ page.date | date: "%b %-d, %Y" }}
+          {% if page.author %} &bull; {{ page.author }}{% endif %}
+          {% if page.meta %} &bull; {{ page.meta }}{% endif %}
+        </p>
+      </div>
+
+      {% endif %}
+    </div>
+  </div>
+
+</header>

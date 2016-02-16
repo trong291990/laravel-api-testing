@@ -1,0 +1,14 @@
+{
+  "name": "Desi Cochrane",
+  "version": "0.0.0",
+  "authors": [
+    "Desi Cochrane <desi@desicochrane.com>"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "picky-sass": "pickygoat/picky-sass#master"
+  },
+  "homepage": "http://desicochrane.github.io",
+  "description": "Blog of Desi Cochrane",
+  "private": true
+}

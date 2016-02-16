@@ -1,0 +1,46 @@
+/**
+* Branding
+*/
+
+$dcBrand_fontSize--small: 0.9em !default;
+$dcBrand_fontSize--medium: 1.2em !default;
+
+$dcBrand_fgColor: $pgColorDark !default;
+$dcBrand_fgColor--hover: $pgColorDark--2 !default;
+
+$dcBrand_fgColor--light: $pgColorLight !default;
+$dcBrand_fgColor--light--hover: $pgColorLight--2 !default;
+
+.dc-brand {
+  // @include dcFont2;
+  color: $dcBrand_fgColor;
+  &:before {
+    content: "value";
+    font-weight: 400;
+  }
+  &:after {
+    content: "hacking.io";
+    font-weight: 300;
+  }
+  &:hover, &:active, &:focus {
+    text-decoration: none;
+    color: $dcBrand_fgColor--hover;
+  }
+}
+
+
+.dc-brand--light {
+  color: $dcBrand_fgColor--light;
+
+  &:hover, &:active, &:focus {
+    color:  $dcBrand_fgColor--light--hover;
+  }
+}
+
+.dc-brand--medium {
+  font-size: $dcBrand_fontSize--medium;
+}
+
+.dc-brand--small {
+  font-size: $dcBrand_fontSize--small;
+}
